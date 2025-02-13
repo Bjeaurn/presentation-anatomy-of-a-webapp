@@ -1,0 +1,11 @@
+{
+  "name": "anatomy-of-a-webapp",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Bjorn Schijff",
+  "license": "ISC",
+  "description": ""
+}
