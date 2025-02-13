@@ -3,9 +3,14 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
+    "start": "marp -w -s presentation.md",
+    "build": "marp presentation.md",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Bjorn Schijff",
   "license": "ISC",
-  "description": ""
+  "description": "",
+  "devDependencies": {
+    "@marp-team/marp-cli": "^4.1.1"
+  }
 }
