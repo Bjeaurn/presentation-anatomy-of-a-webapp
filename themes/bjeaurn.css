@@ -1,0 +1,60 @@
+/* @theme bjeaurn */
+/*
+Bjeaurn theme created by, you guessed it, Bjeaurn.
+> www.bjeaurn.com
+
+palette in :root
+*/
+
+@import "default";
+
+:root {
+	--primary-color: rgb(0, 102, 255);
+	--secondary-color: rgb(0, 179, 255);
+	--white-color: #fafafa;
+	--background: #808080;
+	--background-1: #1c1e2e;
+	--background-2: #0e1924;
+
+}
+
+.primary {
+	color: var(--primary-color)
+}
+
+.secondary {
+	color: var(--secondary-color);
+}
+.muted {
+	color: #a8a8a8;
+}
+
+section {
+	display: flex;
+	background-color: var(--background);
+	background-image: linear-gradient(to top right, var(--background-1) 5%, var(--background-2) 95%);
+}
+
+h1, h2, h3, h4, h5, h6 {
+	color: var(--white-color)
+}
+
+h1.secondary {
+	color: var(--secondary-color)
+}
+
+img.rounded {
+	border-radius: 50%;
+}
+
+img.center {
+	margin: 0 auto;
+}
+
+.avatar {
+	border: 3px solid rgba(0, 102, 255, 0.6);
+}
+
+.center {
+	text-align: center;
+}
