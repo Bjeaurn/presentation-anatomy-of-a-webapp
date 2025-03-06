@@ -33,7 +33,13 @@ section {
 	display: flex;
 	background-color: var(--background);
 	background-image: linear-gradient(to top right, var(--background-1) 5%, var(--background-2) 95%);
+	flex: 1 1 auto;
+	text-align: center;
 }
+
+img::before {
+	content: "data-marp"
+}	
 
 h1, h2, h3, h4, h5, h6 {
 	color: var(--white-color)
@@ -57,4 +63,25 @@ img.center {
 
 .center {
 	text-align: center;
+}
+
+.bg.cover-left {
+	background-position: left;
+}
+div[data-bespoke-marp-fragment="active"] >
+.slide-up {
+	animation-name: slideUp;
+    animation-duration: 1s;
+    /* animation-timing-function: ease-in-ease-out; */
+}
+
+@keyframes slideUp {
+	0% {
+		opacity: 0;
+		transform: translateY(100vh);
+	}
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
 }

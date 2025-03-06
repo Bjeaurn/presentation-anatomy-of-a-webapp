@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "start": "marp -w -s ./",
-    "build": "marp presentation.md",
+    "start": "marp -w -s --html ./",
+    "build": "marp --html presentation.md",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Bjorn Schijff",
