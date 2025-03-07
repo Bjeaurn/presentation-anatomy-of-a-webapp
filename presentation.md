@@ -74,7 +74,11 @@ transition: wipe
 
 <h1 class="center">Act I.</h1>
 
-# What's a WebApp
+<div data-marpit-fragment>
+
+<h1 class="slide-up">What's a WebApp</h1>
+
+</div>
 
 * Application ran in the browser
 * No installation of software
@@ -137,6 +141,11 @@ transition: wipe
 
 ----
 
+// Summarization slide with all logo's of modern stacks
+// Enabling the development of webapps all over, but we'll dive into that later.
+
+----
+
 ## Blogpost
 
 ![QR](./assets/blogpost.svg)
@@ -173,6 +182,8 @@ Second browser war (2004-2017)
 
 ----
 
+// Bit of a better flow? Perhaps HTML and then the ES part on a separate slide?
+
 HTML5 (2008), CSS3 (2011)
 
 JavaScript (1995)
@@ -185,14 +196,17 @@ ES6 (2016)
 
 ----
 
-// Logo
-<!-- 1a. Electron? Tauri?  -->
-<!-- // Clear distinction between webapps and native apps, where some (not all) share a codebase. Slack, Discord, etc. have native apps that run the webapp internally. Gmail is mainly a web version only, Microsoft Teams and Netflix are hybrids. -->
+## Side-quest
 
+Electron & Tauri logo's
+
+<!-- 1a. Electron? Tauri?  -->
+<!-- // Clear distinction between webapps and native apps, where some (not all) share a codebase. Slack, Discord, etc. have native apps that run the webapp internally. Gmail is mainly a web version only, Microsoft Teams and Netflix are probably a bit more complicated. -->
 
 ---
 
-// Flow plaatje
+// The browsers's "job"
+// Flow image -> Address, HTTP, retrieve, parse, download assets, render, etc.
 <!-- 2. The flow from browser to server, Nginx/Apache or what have you, downloads the files -->
 
 ---
