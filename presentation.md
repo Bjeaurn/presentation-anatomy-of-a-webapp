@@ -198,25 +198,32 @@ ES6 (2016)
 
 ## Side-quest
 
-Electron & Tauri logo's
+![bg left](./assets/images/electron.png)
+![](./assets/images/tauri.png)
+![](./assets/images/flutter.png)
 
-<!-- 1a. Electron? Tauri?  -->
+
+<!-- 1a. Electron, Tauri, Flutter, etc. making it easy to deploy webapps as a desktop/mobile app. Not the main scope of today. -->
 <!-- // Clear distinction between webapps and native apps, where some (not all) share a codebase. Slack, Discord, etc. have native apps that run the webapp internally. Gmail is mainly a web version only, Microsoft Teams and Netflix are probably a bit more complicated. -->
 
 ---
 
-// The browsers's "job"
-// Flow image -> Address, HTTP, retrieve, parse, download assets, render, etc.
+![bg contain](./assets/images/browser-flow.png)
+<!-- // Flow image -> Address, HTTP, retrieve, parse, download assets, render, etc. -->
 <!-- 2. The flow from browser to server, Nginx/Apache or what have you, downloads the files -->
 
 ---
 
-// Show Inspect F12 tab downloads of HTML, CSS, images, and JS --> Leading into next one.
-<!-- 3. JavaScript runs the application, under the hood check, it's all HTML, CSS and JS! -->
+![bg contain](./assets/images/nginx-apache.png)
+
+<!-- Webservers? Nginx / Apache / CDNs (S3/Minio etc.) -->
+<!-- In the end it's just HTML, CSS, JavaScript and other assets like images, being downloaded by a browser. -->
 
 ---
 
-// Show Minified/compressed Javascript, make it hard to read and understand.
+![bg contain](./assets/images/discord-source.png)
+<!-- // Show Inspect F12 tab downloads of HTML, CSS, images, and JS --> Leading into next one. -->
+<!-- 3. JavaScript runs the application, under the hood check, it's all HTML, CSS and JS! -->
 <!-- Last slide: But, the JavaScript you receive is not the code you write? Let's dive into that! 
 // Screenshot of obfuscated code in the browser? -->
 

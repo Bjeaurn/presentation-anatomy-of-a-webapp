@@ -1,0 +1,31 @@
+@startuml
+participant "User" as User
+participant "User-Agent (Browser)" as Browser
+participant "DNS" as DNS
+participant "Web Server" as Server
+participant "CDN / External Resources" as CDN
+
+User -> Browser: Type in domain
+Browser -> DNS: Request domain-to-IP resolution
+DNS --> Browser: Respond with IP address
+
+Browser -> Server: Establish TCP connection (3-way handshake)
+Browser -> Server: Send HTTP request for HTML page
+Server --> Browser: Return HTML document
+
+Browser -> CDN: Request CSS, JS and other assets
+CDN --> Browser: Return requested assets
+
+Browser -> Server: Send additional API requests (if needed)
+Server --> Browser: Respond with JSON / Data
+
+note left of Browser
+  Parse HTML and build DOM  
+  Parse CSS and build CSSOM  
+  Construct Render Tree  
+  Perform Layout Calculation  
+  Paint and Composite  
+end note
+
+Browser -> User: Display WebApp fully rendered
+@enduml
