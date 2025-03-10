@@ -212,30 +212,62 @@ ES6 (2016)
 <!-- // Flow image -> Address, HTTP, retrieve, parse, download assets, render, etc. -->
 <!-- 2. The flow from browser to server, Nginx/Apache or what have you, downloads the files -->
 
----
+----
 
 ![bg contain](./assets/images/nginx-apache.png)
 
 <!-- Webservers? Nginx / Apache / CDNs (S3/Minio etc.) -->
 <!-- In the end it's just HTML, CSS, JavaScript and other assets like images, being downloaded by a browser. -->
 
+----
+
+![bg contain](./assets/images/discord-1.png)
+<!-- So in the end our browser (our native app that emulates a browser) will reach out to a web server or CDN, download a HTML page and additional assets, and starts up the client side "WebApp" -->
+
+----
+
+![bg contain](./assets/images/discord-2-inspect.png)
+
+<!-- // Show Inspect F12 tab downloads of HTML, CSS, images, and JS. Leading into next one. -->
+<!-- JavaScript runs the application, under the hood: it's all HTML, CSS and JS! -->
+
 ---
 
-![bg contain](./assets/images/discord-source.png)
-<!-- // Show Inspect F12 tab downloads of HTML, CSS, images, and JS --> Leading into next one. -->
-<!-- 3. JavaScript runs the application, under the hood check, it's all HTML, CSS and JS! -->
-<!-- Last slide: But, the JavaScript you receive is not the code you write? Let's dive into that! 
-// Screenshot of obfuscated code in the browser? -->
+![bg contain](./assets/images/discord-3-code.png)
+
+<!-- Last slide: But, the JavaScript you receive is not the code you write?  This has hints of React, but this is not the sort of code I can read. Let alone the organization and architecture of files and folders that makes it easy to work with... 
+
+Let's dive into that!
+-->
 
 ---
 
 <h1 class="center">Act III.</h1>
 
 # Code
+
+// We write code for the browser, not the server.
+// Our code runs everywhere, on people's laptops and phones.
+
+// So how do we go from "this" (clean repo) to "that" (obfuscated/optimized code)
+
+// Starts with a clean repo, and the tooling of your choice. -> Choice is yours, pick what works for your solution and environment, overview?
+
+// Zoom in into configuration files for builds, tsconfig, vite config, webpack, esbuild?
+
+// Build steps flow? (Mention automated tooling)
+
+// Final result!
+
+// Deployment, CI pipelines to automate all this work, checking and testing.
+
+// Serve to browser!
 <!-- 1. Modern web app tooling, SPA's, meta-frameworks for hybrids -->
 <!-- 2. Building, compilation, webpack/vite/esbuild/tsc, including optimalisation and obfuscation/minimizing -->
 <!-- 3. Deployment to a server (Act 2) -->
 <!-- 4. Lift off! -->
+
+
 
 ---
 
