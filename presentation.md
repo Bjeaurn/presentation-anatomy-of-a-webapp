@@ -141,8 +141,9 @@ transition: wipe
 
 ----
 
-// Summarization slide with all logo's of modern stacks
-// Enabling the development of webapps all over, but we'll dive into that later.
+![bg contain](./assets/images/modern-stacks.png)
+
+<!-- // Enabling the development of webapps all over, but we'll dive into that later. -->
 
 ----
 
@@ -182,16 +183,18 @@ Second browser war (2004-2017)
 
 ----
 
-// Bit of a better flow? Perhaps HTML and then the ES part on a separate slide?
+![](./assets/images/html-css-js.png)
 
-HTML5 (2008), CSS3 (2011)
+* HTML5 (2008)
+* CSS3 (2011)
 
-JavaScript (1995)
-ECMAScript (1997)
-ES5 (2009)
-ES6 (2016)
+* JavaScript (1995)
+* ECMAScript (1997)
+* ES5 (2009)
+* ES6 (2016)
 
-<!-- // History, quick summary of years of introduction of ECMAScript, which browsers etc? -->
+<!-- HTML5 for modern syntax that helped browsers, CSS3 for modern styling and layout possibilities to deal with different screen sizes (mobile problem too!) -->
+<!-- JS by Netscape, into Ecma International Standard, turned into modern ES used everywhere. -->
 <!-- // End with the point where most browsers got kinda caught up and online capabilitites for apps become mainstream/normalized. -->
 
 ----
@@ -244,33 +247,144 @@ Let's dive into that!
 
 <h1 class="center">Act III.</h1>
 
-# Code
 
-// We write code for the browser, not the server.
-// Our code runs everywhere, on people's laptops and phones.
+<div data-marpit-fragment>
 
-// So how do we go from "this" (clean repo) to "that" (obfuscated/optimized code)
+<h1 class="slide-up">Code</h1>
 
-// Starts with a clean repo, and the tooling of your choice. -> Choice is yours, pick what works for your solution and environment, overview?
+</div>
 
-// Zoom in into configuration files for builds, tsconfig, vite config, webpack, esbuild?
+<!-- So now that we've seen what role a browser plays for our WebApp, let's dive into the code that we need to run on our users devices. -->
 
-// Build steps flow? (Mention automated tooling)
+---
 
-// Final result!
+![](./assets/images/sb-clean-react-repo.png)
 
-// Deployment, CI pipelines to automate all this work, checking and testing.
+<!-- So how do we go from a (very) cleanly generated repository (using your favorite stack) ... -->
 
-// Serve to browser!
-<!-- 1. Modern web app tooling, SPA's, meta-frameworks for hybrids -->
-<!-- 2. Building, compilation, webpack/vite/esbuild/tsc, including optimalisation and obfuscation/minimizing -->
-<!-- 3. Deployment to a server (Act 2) -->
-<!-- 4. Lift off! -->
+---
 
+// Maybe improve image?
+![](./assets/images/discord-3-code.png)
+<!-- ...to this fully build application? -->
+
+---
+
+![](./assets/images/modern-stacks.png)
+
+<!-- This talk is not meant to go into the workings of any modern stacks. If inspired, take any one that interests you and follow a tutorial! -->
+
+---
+
+![](./assets/images/vite-config.png)
+![](./assets/images/angular-src.png)
+
+<!-- Which will have any combination of these kinds of files... Let's dive into what these represent and what they do. -->
+
+---
+
+![](./assets/images/webpack.png)
+
+<!-- Example of what webpack describes itself as. -->
+
+---
+
+![](./assets/images/build-tools.png)
+
+<!-- SWC: Speedy web compiler, Vite, Terser, Webpack, TSC, Babel, Rollup, esbuild -->
+
+<!-- Most stacks use one or more of these tools in different combinations. Some are opt-in by plugins, some are default, but they all have some overlap in functions. -->
+
+---
+
+# Build steps
+
+* Compilation & Transpilation
+* Tree-shaking
+* Minification & Optimization
+* Code-splitting
+* Bundling
+
+---
+
+# Compilation & Transpilation
+
+![](./assets/images/ts-to-es2015.png)
+
+<!-- SWC, TSC, esbuild (etc.) will take our TypeScript files and convert them to the requested target of JavaScript. esnext or others; depending on the level of compatibility you want to offer to older browsers. -->
+
+---
+
+# Tree-shaking
+
+```ts
+import { usedFunction, unusedFunction } from './utils';
+import { of } from 'rxjs';
+
+usedFunction();
+const stream = of([1,2,3]);
+```
+
+<!-- Only take into consideration code that's actually used. This goes both for our application (eliminate testing code for example!), and libraries that we only need a part off. Less JavaScript is better! -->
+
+---
+
+# Minification & Optimization
+
+![](./assets/images/minify-esbuild.png)
+
+<!-- Take the compiled / optimized JavaScript and remove whitespaces, optimize variable names, use shorter ways to write certain code (based on the requested target, depends on the target ES or platform) to make sure we have less kilobytes of JavaScript to ship. -->
+
+---
+
+# Code-splitting
+
+![](./assets/images/angular-codesplitting.png)
+
+<!-- Enables lazy-loading. The build system figures out the absolute minimum amount of JavaScript to ship to the browser to be able to start the application. Then it bundles and chunks pieces of code that needs to be shipped together. -->
 
 
 ---
 
-Fin.
+# Bundling
 
-// Thank you slide, QR code, reiterate contact info.
+![height:20em](./assets/images/angular-dist-bundling2.png)
+<!-- ![](./assets/images/angular-bundling.png) -->
+
+<!-- The final bundling then renames and optimizes all the identified chunks, brings all the work done in memory back to real files and outputs the build artifact as a folder that can be deployed. -->
+
+---
+
+# Serving final artifact
+
+![bg](./assets/images/angular-serving-final-build.png)
+
+<!-- When you deploy this to your Web Server or CDN and make it available on the internet: This will be the end product of all our hard work.  -->
+
+---
+
+# Summary
+
+* Code for the browser, not the server it "sits" on.
+* Code runs everywhere, the browsers do the heavy lifting
+* Ship minimal JavaScript, maximize interactivity
+
+<!-- To summarize: We write for the browser, not the server. This means that our code runs *everywhere*. On your phones and laptops, everywhere you have a browser (or an application imitating a browser). And our tools make it easy to develop, but we try to ship as little JavaScript as possible whilst making the apps as useful as possible. -->
+
+<!-- So next time you open a webapp, you'll know exactly what’s happening under the hood. -->
+
+---
+
+# Fin
+
+<!-- So next time you open a webapp, you'll know exactly what’s happening under the hood. -->
+
+---
+
+<!-- ![bg right:50%](assets/Bjorn_avatar-transformed.jpeg) -->
+
+<img src="assets/Bjorn_avatar-transformed.jpeg" class="rounded center avatar" height="35%"/>
+
+<h2 class="center">Bjorn Schijff</h2>
+<p class="center muted">Sr. Frontend Engineer / Software Architect / Speaker & Trainer</p>
+<p class="center">@ Codestar by Sopra Steria
