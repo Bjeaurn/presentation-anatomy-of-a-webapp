@@ -143,7 +143,7 @@ transition: wipe
 
 ![bg contain](./assets/images/modern-stacks.png)
 
-<!-- // Enabling the development of webapps all over, but we'll dive into that later. -->
+<!-- Enabling the development of webapps all over, but we'll dive into that later. -->
 
 ----
 
@@ -195,7 +195,7 @@ Second browser war (2004-2017)
 
 <!-- HTML5 for modern syntax that helped browsers, CSS3 for modern styling and layout possibilities to deal with different screen sizes (mobile problem too!) -->
 <!-- JS by Netscape, into Ecma International Standard, turned into modern ES used everywhere. -->
-<!-- // End with the point where most browsers got kinda caught up and online capabilitites for apps become mainstream/normalized. -->
+<!-- End with the point where most browsers got kinda caught up and online capabilitites for apps become mainstream/normalized. -->
 
 ----
 
@@ -207,12 +207,12 @@ Second browser war (2004-2017)
 
 
 <!-- 1a. Electron, Tauri, Flutter, etc. making it easy to deploy webapps as a desktop/mobile app. Not the main scope of today. -->
-<!-- // Clear distinction between webapps and native apps, where some (not all) share a codebase. Slack, Discord, etc. have native apps that run the webapp internally. Gmail is mainly a web version only, Microsoft Teams and Netflix are probably a bit more complicated. -->
+<!-- Clear distinction between webapps and native apps, where some (not all) share a codebase. Slack, Discord, etc. have native apps that run the webapp internally. Gmail is mainly a web version only, Microsoft Teams and Netflix are probably a bit more complicated. -->
 
 ---
 
 ![bg contain](./assets/images/browser-flow.png)
-<!-- // Flow image -> Address, HTTP, retrieve, parse, download assets, render, etc. -->
+<!-- Flow image -> Address, HTTP, retrieve, parse, download assets, render, etc. -->
 <!-- 2. The flow from browser to server, Nginx/Apache or what have you, downloads the files -->
 
 ----
@@ -231,7 +231,7 @@ Second browser war (2004-2017)
 
 ![bg contain](./assets/images/discord-2-inspect.png)
 
-<!-- // Show Inspect F12 tab downloads of HTML, CSS, images, and JS. Leading into next one. -->
+<!-- Show Inspect F12 tab downloads of HTML, CSS, images, and JS. Leading into next one. -->
 <!-- JavaScript runs the application, under the hood: it's all HTML, CSS and JS! -->
 
 ---
@@ -264,7 +264,7 @@ Let's dive into that!
 
 ---
 
-// Maybe improve image?
+<!-- // TODO Maybe improve image? -->
 ![](./assets/images/discord-3-code.png)
 <!-- ...to this fully build application? -->
 
@@ -376,15 +376,19 @@ const stream = of([1,2,3]);
 ---
 
 # Fin
+<img src="assets/qrcode.svg" width="20%" class="center" style="margin: 2em;"/>
+<!-- // TODO Styling of the QR code? -->
 
 <!-- So next time you open a webapp, you'll know exactly what’s happening under the hood. -->
 
 ---
 
-<!-- ![bg right:50%](assets/Bjorn_avatar-transformed.jpeg) -->
 
 <img src="assets/Bjorn_avatar-transformed.jpeg" class="rounded center avatar" height="35%"/>
-
 <h2 class="center">Bjorn Schijff</h2>
 <p class="center muted">Sr. Frontend Engineer / Software Architect / Speaker & Trainer</p>
 <p class="center">@ Codestar by Sopra Steria
+
+<div class="socials">
+<!-- // TODO Socials? Also on other slide? -->
+</div>

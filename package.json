@@ -4,8 +4,9 @@
   "main": "index.js",
   "scripts": {
     "start": "marp -w -s --html ./",
-    "build": "marp --html presentation.md",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "marp --html --theme bjeaurn.css presentation.md",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "rclone copy index.html somnu-s3:/website/bjeaurn/talks/anatomy-of-a-webapp/   "
   },
   "author": "Bjorn Schijff",
   "license": "ISC",
