@@ -10,7 +10,7 @@ transition: wipe
 
 <h2 data-marpit-fragment="2">From code to browser.</h2>
 
-<!-- Welcome! Short intro into story. -->
+<!-- Welcome! Short intro into story about apps used daily. -->
 
 ---
 
@@ -48,6 +48,8 @@ transition: wipe
 
 </div>
 
+<!-- Later in the day, some music, check in with friends all over the world on discord, or end it with a movie on Netflix. -->
+
 ----
 
 <!-- These are all webapps.-->
@@ -59,6 +61,8 @@ transition: wipe
 
 # The Anatomy of a WebApp
 ## From code to browser
+
+<!-- For the next 25-30 minutes, we'll dive into the anatomy of a webapp. -->
 
 ---
 
@@ -87,11 +91,13 @@ transition: wipe
 <!-- No installation: Besides the occasional "Accept", no installation of any sorts required on your machine. -->
 <!-- Interactive UX: vs. a static page with just content like a blog or news site. -->
 
-<!-- This definition is a bit... simple. So hopefully after todays talk we'll get a better idea of what a WebApp really entails. -->
+<!-- This definition is a bit... simple. So hopefully after todays talk we'll get a better idea of what really makes up a webapp.-->
 
 ---
 
 # History of WebApps
+
+<!-- To understand how we got here, let's first go into some history. -->
 
 ----
 
@@ -103,7 +109,7 @@ transition: wipe
 
 </div>
 
-<!--  -->
+<!--  Not really interactive, but there was not really any "interactivity" on the web back then. -->
 
 ----
 
@@ -111,20 +117,21 @@ transition: wipe
 ![bg contain invert](./assets/images/asp.net.png)
 ![bg contain](./assets/images/coldfusion.png)
 
+<!-- Dominated by Server Side solutions for the web; templating languages for dynamic content.-->
+
 
 ----
 
 # Early 00s
 
-<!-- Introduction of the 'first' WebApp - Gmail. BEFORE JQUERY! -->
+<!-- Introduction of the 'first' WebApp, does any one know? -->
 
 ----
 
 
 ![bg contain](./assets/images/2004_Gmail_UI.width-1000.format-webp.webp)
 
-<!-- Remember 1GB being a lot? Remember needing an invite? -->
-<!-- But remember Hotmail as a comparison? It was SSR, but nothing interactive. Every click was a new page. -->
+<!-- 1st of April, 2004. Fully interactive page, where the folders on the left of the clicking of an email wouldn't rerender your whole page; but update it in place. Revolutionary! In comparison back then to things like Hotmail. -->
 
 ----
 
@@ -145,7 +152,7 @@ transition: wipe
 
 ![bg contain](./assets/images/modern-stacks.png)
 
-<!-- Enabling the development of webapps all over, but we'll dive into that later. -->
+<!-- Enabling the development of webapps all over, making it easier for developers to build. -->
 
 ----
 
@@ -183,6 +190,9 @@ First browser war (1995-2001)
 
 Second browser war (2004-2017)
 
+<!-- Debate if it ended in 2014, wiki says 2017. Chrome the clear winner. -->
+<!-- But why do we talk about the history of it? To see what that competition has given us for technologies that enable webapps. -->
+
 ----
 
 ![](./assets/images/html-css-js.png)
@@ -212,6 +222,8 @@ Second browser war (2004-2017)
 <!-- Clear distinction between webapps and native apps, where some (not all) share a codebase. Slack, Discord, etc. have native apps that run the webapp internally. Gmail is mainly a web version only, Microsoft Teams and Netflix are probably a bit more complicated. -->
 
 ---
+
+// Maybe redo this picture a bit.
 
 ![bg contain](./assets/images/browser-flow.png)
 <!-- Flow image -> Address, HTTP, retrieve, parse, download assets, render, etc. -->
@@ -274,7 +286,7 @@ Let's dive into that!
 
 ![](./assets/images/modern-stacks.png)
 
-<!-- This talk is not meant to go into the workings of any modern stacks. If inspired, take any one that interests you and follow a tutorial! -->
+<!-- This talk is not meant to go into the workings of any modern stacks. If inspired, take any one that interests you and follow a tutorial! But if you start with any stack like this, you'll probably end up with some form of configuration for the tools it uses under the hood...-->
 
 ---
 
@@ -367,9 +379,16 @@ const stream = of([1,2,3]);
 
 # Summary
 
-* Code for the browser, not the server it "sits" on.
+* WebApps are everywhere. Your favorite daily app might be one!
 * Code runs everywhere, the browsers do the heavy lifting
+* It's all HTML, CSS and JavaScript.
 * Ship minimal JavaScript, maximize interactivity
+
+<div data-marpit-fragment>
+
+<h2 class="slide-up">Create true app-like experiences for the web.</h2>
+
+</div>
 
 <!-- To summarize: We write for the browser, not the server. This means that our code runs *everywhere*. On your phones and laptops, everywhere you have a browser (or an application imitating a browser). And our tools make it easy to develop, but we try to ship as little JavaScript as possible whilst making the apps as useful as possible. -->
 
@@ -377,20 +396,23 @@ const stream = of([1,2,3]);
 
 ---
 
-# Fin
-<img src="assets/qrcode.svg" width="20%" class="center" style="margin: 2em;"/>
-<!-- // TODO Styling of the QR code? -->
+#  Fin
+
+<div data-marpit-fragment>
+
+<img src="assets/qrcode.svg" class="slide-up" width="20%" class="center" style=""/>
+
+</div>
+<div data-marpit-fragment>
+
+<img src="assets/Bjorn_avatar-transformed.jpeg" class="rounded avatar" style="max-height: 200px; float: left; "/>
+<h2 class="center">Bjorn Schijff</h2>
+<p class="center muted" style="line-height: 3rem; display: inline-block;">
+    <img src="assets/bsky.svg" style="width: 2rem; height: 2rem; margin-left: 1rem; margin-right: 0.5rem;"> <span>bjeaurn.com</span>
+    <img src="assets/x.svg" style="width: 2rem; height: 2rem; margin-left: 1rem; margin-right: 0.5rem;"> <span>@Bjeaurn</span>
+</p>
+
+</div>
 
 <!-- So next time you open a webapp, you'll know exactly what’s happening under the hood. -->
 
----
-
-
-<img src="assets/Bjorn_avatar-transformed.jpeg" class="rounded center avatar" height="35%"/>
-<h2 class="center">Bjorn Schijff</h2>
-<p class="center muted">Sr. Frontend Engineer / Software Architect / Speaker & Trainer</p>
-<p class="center">@ Codestar by Sopra Steria
-
-<div class="socials">
-<!-- // TODO Socials? Also on other slide? -->
-</div>
