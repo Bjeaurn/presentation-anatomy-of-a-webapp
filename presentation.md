@@ -87,6 +87,8 @@ transition: wipe
 <!-- No installation: Besides the occasional "Accept", no installation of any sorts required on your machine. -->
 <!-- Interactive UX: vs. a static page with just content like a blog or news site. -->
 
+<!-- This definition is a bit... simple. So hopefully after todays talk we'll get a better idea of what a WebApp really entails. -->
+
 ---
 
 # History of WebApps
