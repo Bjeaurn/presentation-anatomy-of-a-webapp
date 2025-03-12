@@ -323,6 +323,8 @@ Let's dive into that!
 
 # Compilation & Transpilation
 
+<small>TSC, Babel, SWC</small>
+
 ![](./assets/images/ts-to-es2015.png)
 
 <!-- SWC, TSC, esbuild (etc.) will take our TypeScript files and convert them to the requested target of JavaScript. esnext or others; depending on the level of compatibility you want to offer to older browsers. -->
@@ -330,6 +332,8 @@ Let's dive into that!
 ---
 
 # Tree-shaking
+
+<small>Webpack, Rollup, esbuild, Vite</small>
 
 ```ts
 import { usedFunction, unusedFunction } from './utils';
@@ -345,6 +349,8 @@ const stream = of([1,2,3]);
 
 # Minification & Optimization
 
+<small>Terser, esbuild, UglifyJS</small>
+
 ![](./assets/images/minify-esbuild.png)
 
 <!-- Take the compiled / optimized JavaScript and remove whitespaces, optimize variable names, use shorter ways to write certain code (based on the requested target, depends on the target ES or platform) to make sure we have less kilobytes of JavaScript to ship. -->
@@ -352,6 +358,8 @@ const stream = of([1,2,3]);
 ---
 
 # Code-splitting
+
+<small>Webpack, Rollup, Vite</small>
 
 ![](./assets/images/angular-codesplitting.png)
 
@@ -366,6 +374,7 @@ const stream = of([1,2,3]);
 <!-- ![](./assets/images/angular-bundling.png) -->
 
 <!-- The final bundling then renames and optimizes all the identified chunks, brings all the work done in memory back to real files and outputs the build artifact as a folder that can be deployed. -->
+<!-- Kinda depends on the tools and stack you're using, it kinda defines what's minimally required to run and how it handles lazy loading. -->
 
 ---
 
@@ -415,4 +424,4 @@ const stream = of([1,2,3]);
 </div>
 
 <!-- So next time you open a webapp, you'll know exactly what’s happening under the hood. -->
-
+<!-- Follow me anywhere with this alias, Github, Discord, Twitter, BlueSky, you name it... -->
