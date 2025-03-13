@@ -223,9 +223,7 @@ Second browser war (2004-2017)
 
 ---
 
-// Maybe redo this picture a bit.
-
-![bg contain](./assets/images/browser-flow.png)
+![bg contain](assets/images/browser-flow.png)
 <!-- Flow image -> Address, HTTP, retrieve, parse, download assets, render, etc. -->
 <!-- 2. The flow from browser to server, Nginx/Apache or what have you, downloads the files -->
 
@@ -319,6 +317,8 @@ Let's dive into that!
 * Code-splitting
 * Bundling
 
+<!-- Although the exact order might differ a bit on the used set of tools, as they have some overlap. But at some point in the build process; they'll have to do something like this. -->
+
 ---
 
 # Compilation & Transpilation
@@ -363,7 +363,7 @@ const stream = of([1,2,3]);
 
 ![](./assets/images/angular-codesplitting.png)
 
-<!-- Enables lazy-loading. The build system figures out the absolute minimum amount of JavaScript to ship to the browser to be able to start the application. Then it bundles and chunks pieces of code that needs to be shipped together. -->
+<!-- Enables lazy-loading. The build system figures out the absolute minimum amount of JavaScript to ship to the browser to be able to start the application. Then it bundles and chunks pieces of code that needs to be shipped together for additional on-demand features. -->
 
 
 ---

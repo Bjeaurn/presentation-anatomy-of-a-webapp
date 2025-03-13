@@ -13,19 +13,24 @@ Browser -> Server: Establish TCP connection (3-way handshake)
 Browser -> Server: Send HTTP request for HTML page
 Server --> Browser: Return HTML document
 
+note left of Browser
+  Parse HTML and build DOM  
+end note
+
 Browser -> CDN: Request CSS, JS and other assets
 CDN --> Browser: Return requested assets
 
-Browser -> Server: Send additional API requests (if needed)
-Server --> Browser: Respond with JSON / Data
-
 note left of Browser
-  Parse HTML and build DOM  
   Parse CSS and build CSSOM  
   Construct Render Tree  
   Perform Layout Calculation  
   Paint and Composite  
 end note
+
+
+Browser -> Server: Send additional API requests (if needed)
+Server --> Browser: Respond with JSON / Data
+
 
 Browser -> User: Display WebApp fully rendered
 @enduml
